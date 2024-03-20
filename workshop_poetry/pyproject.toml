@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "workshop-poetry"
+version = "0.1.0"
+description = ""
+authors = ["camilayatabe <camila.yatabe@gmail.com>"]
+readme = "README.md"
+packages= [{include= "workshop_poetry"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+gerar_nome_para_animais_cli= "workshop_poetry.main:gerar_nome_para_animais_cli"
